@@ -9,7 +9,7 @@ from aiogram.fsm.state import State, StatesGroup
 
 # Настройка логирования и токена
 logging.basicConfig(level=logging.INFO)
-TOKEN = "ТВОЙ_ТОКЕН_БОТА"  # Замени на свой токен от @BotFather
+TOKEN = "8910227751:AAH22yGJzyiQ67hg60fiimLUCUHfO25iMRQ"  # Замени на свой токен от @BotFather
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
