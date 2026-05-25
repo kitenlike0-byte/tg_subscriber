@@ -115,7 +115,8 @@ async def delete_subscription(callback: CallbackQuery):
     cursor = conn.cursor()
     cursor.execute("DELETE FROM subscriptions WHERE id = ? AND user_id = ?", (sub_id, callback.from_user.id))
     conn.commit()
-    conn.close()await callback.answer("Подписка удалена!")
+    conn.close()
+    await callback.answer("Подписка удалена!")
     await callback.message.edit_text("❌ *Эта подписка была удалена.*", parse_mode="Markdown")
 
 
